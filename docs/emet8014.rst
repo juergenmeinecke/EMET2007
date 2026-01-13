@@ -1,0 +1,7 @@
+EMET8014
+==========
+
+Here the link to the website of `EMET8014 <https://juergenmeinecke.github.io/EMET8014/>`_
+
+This is the course material for my course **Advanced Econometrics I**, EMET4314 (elective for
+Honours) and EMET8014 (compulsory for PhD).

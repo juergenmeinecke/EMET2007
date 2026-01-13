@@ -1,0 +1,63 @@
+name: Build & Deploy Sphinx (sync assets)
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4  # :contentReference[oaicite:0]{index=0}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install system deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y rsync
+
+      - name: Sync lecture slides, notebooks, datasets, assignments into docs (so Sphinx can render them)
+        run: |
+          rsync -av --delete lecture_notes/ docs/lecture_notes/
+          rsync -av --delete notebooks/ docs/notebooks/
+          rsync -av --delete datasets/ docs/datasets/
+          rsync -av --delete assignments/ docs/assignments/
+
+      - name: Install Python deps
+        run: |
+          python -m pip install -U pip
+          pip install -r docs/requirements.txt
+
+      - name: Build site
+        run: |
+          sphinx-build -b html docs docs/_build/html
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/_build/html
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4  # :contentReference[oaicite:1]{index=1}
+
