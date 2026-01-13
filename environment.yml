@@ -1,3 +1,4 @@
+# The current file tells Conda and Binder which Jupyter packages to load at startup
 name: emet2007
 channels:
   - conda-forge
