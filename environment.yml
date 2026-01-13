@@ -1,0 +1,9 @@
+name: emet2007
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - matplotlib
+  - statsmodels
