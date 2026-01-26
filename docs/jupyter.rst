@@ -1,16 +1,33 @@
-.. _jupyter_label:
-
-########################
 Get Python-ready!
-########################
+=================
+
+Why coding in econometrics?
+---------------------------
+
+Econometrics is all about using data to answer real-world economic questions. To do this well, we
+need to be able to work with data—loading it, cleaning it, visualising it, and running statistical
+analyses on it.
+
+While you could do some of this in spreadsheets, modern econometric work involves datasets and
+methods that quickly outgrow what Excel can handle. That's where coding comes in. Writing code lets
+you automate repetitive tasks, handle large datasets, reproduce your analysis exactly, and apply
+sophisticated statistical techniques.
+
+Don't worry if you've never coded before! We'll be using Python, which is known for being
+beginner-friendly and readable. And rather than writing code in a scary black terminal window, we'll
+use Jupyter notebooks—a friendly environment where you can write code, see results, and add notes
+all in one place, right in your web browser.
+
+Think of it as a digital lab notebook for data work.
+
 
 What are Python and Jupyter?
-===============================
+----------------------------
 
-What is `Python <https://python.org>`_!?  Well, Python's awesome! Enough said.
+What is `Python <https://python.org>`_!? Well, Python's awesome! Enough said.
 
 We will be using Python for our econometric data work. The way we interact with Python is through
-so-called **Jupyter notebooks**. Our friends from https://quantecon.org clarify:
+so-called Jupyter notebooks. Our friends from `quantecon.org <https://quantecon.org>`_ clarify:
 
 .. admonition:: What are Jupyter notebooks?
 
@@ -20,7 +37,7 @@ so-called **Jupyter notebooks**. Our friends from https://quantecon.org clarify:
     They use a browser-based interface to Python with
 
     * The ability to write and execute Python commands.
-           
+
     * Formatted output in the browser, including tables, figures, animation, etc.
 
     * The option to mix in formatted text and mathematical expressions.
@@ -31,349 +48,218 @@ so-called **Jupyter notebooks**. Our friends from https://quantecon.org clarify:
 
 Yes, you heard that right: Jupyter notebooks allow you to run Python inside a web browser!
 
-I hear you ask: Sounds awesome, but how in the world do I get started with Jupyter!? Well, two
-options (plus a third one that I don't recommend):
+I hear you ask: Sounds awesome, but how in the world do I get started with Jupyter!? Well, two options:
 
-* Local install (**preferred**): Anaconda
+1. **Cloud based**: Google Colab
+2. **Local install**: Anaconda
 
-* Cloud based: Google Colab 
+I will explain these two in the next sections.
 
-I will explain these two in the next sections. 
+.. note::
 
-The third way of running Jupyter notebooks is actually via the Anaconda installation on the
-computers of the ANU Information Commons (the computers in the dorms, libraries, and various
-computer labs across campus). For example, you can log into the PCs in the Copland labs and start
-a Jupyter session there.  We have tested this and while it works in principle, the execution is
-quite slow and the interaction with the H drive is a bit confusing. Also, you won't be able to log
-into Jupyter via remote desktop access. For these reasons, we do not recommend this way of running
-Jupyter notebooks.
+   There are other ways to run Python and Jupyter notebooks that we won't cover here, including:
 
+   - `Binder <https://mybinder.org>`_ -- launches Jupyter notebooks directly from a GitHub repository
+   - `GitHub Codespaces <https://github.com/features/codespaces>`_ -- a full development environment in the cloud
+   - `JupyterHub <https://jupyter.org/hub>`_ -- often used by universities to provide shared Jupyter servers
+   - `VS Code <https://code.visualstudio.com>`_ -- a popular code editor with excellent Jupyter support
+   - `JupyterLab <https://jupyterlab.readthedocs.io>`_ -- a more advanced interface (included with Anaconda)
 
-
-
-Anaconda
-==============
-
-We suggest this as our **preferred** method. If you are the type of person who likes to run things
-on their own machine then you can install Python and Jupyter on your computer (ideally your laptop
-that you bring to the weekly labs). This will work on PC, Mac, and Linux. (Linux really is the way
-to go, by the way.)
-
-Installation
---------------
-
-Anaconda is *the world's most popular open-source Python distribution platform*. If you go to
-https://www.anaconda.com/download/
-you can download a free version of Anaconda which you can install on your own computer. 
-
-If you choose this option, then this will install a very rich Python environment on your computer
-which will include
-
-* the Python programming language itself (including all the libraries that we will ever need);
-
-* the Jupyter notebooks environment.
-
-In addition it will install many other things which will enable you to take your Python programming
-even further. 
-
-I will not provide detailed installation steps, as Anaconda makes the process fairly easy. 
-
-Launching Jupyter
--------------------
-
-After successful installation you can launch *Jupyter* in these alternative ways: 
-
-* via the Anaconda Navigator (through which you can start a Jupyter session)
-
-* Windows users: typing *Jupyter* in your search bar
-
-* using the command line interface or terminal prompt (search the web for details)
-
-**Do not launch ipynb-files by double clicking on them within your File Explorer!**
-
-
-Organising your folders
---------------------------
-
-One thing is important however: I do need you to be careful about your folder structure for
-EMET2007. I would like you to create three folders:
-
-* Folder ``EMET2007`` somewhere in a good location on your computer
-  
-  Do use precisely this spelling (case and space sensitive!). Do **not** use ``EMET 2007`` or
-  ``Emet2007`` or anything else!
-
-* Folder ``notebooks`` inside the ``EMET2007`` folder
-
-  This folder will collect all the Jupyter notebooks that you write this semester.
-  
-* Folder ``datasets`` also inside the ``EMET2007`` folder
-
-  This folder will collect all the Excel data sets that we will be analysing this semester.
-
-In the future, when you start and save a new Jupyter notebook, be sure to do so inside the
-``notebooks`` folder. 
-
-
-
-
-
-
-
-
-
-
+   Feel free to explore these if you're curious, but Colab or Anaconda will serve you well for this course.
 
 
 Google Colab
-==============
+------------
 
-With Colab you are essentially running Python in a Jupyter notebook on a remote (cloud) computer
-provided by Google. For small applications (such as ours) this is free of charge. You do, however,
-need a Google account.
+Google Colab is free and lets you run Jupyter notebooks in your browser without installing anything. You will need a Google account (any Gmail account works).
 
-The way you access this cloud computer is via your web browser.  With Colab there is no need to
-install anything, you can run Python from anywhere (provided a stable internet connection).
+.. note::
 
-Because it all works remotely via your web browser you can run Jupyter notebooks in many different
-ways: from the university computers, your laptop, your desktop at home, your iPad, your Samsung
-Galaxy, iPhone 18, Nokia 6110, Commodore 64, Nintendo Switch, you get the point.
+   - Make sure you're logged into the correct Google account if you have multiple.
+   - When connecting Colab to Drive, a pop-up will ask you to grant permissions -- click **Allow** for all permissions.
+   - If you accidentally click "Deny", just run the cell again.
+
+**Step 1: Clone the Repository to Google Drive**
+
+1. Go to `colab.research.google.com <https://colab.research.google.com>`_
+2. Click **New notebook**
+3. In the first cell, type:
+
+   .. code-block:: python
+
+      from google.colab import drive
+      drive.mount('/content/drive')
+
+4. Press **Shift + Enter** to run the cell
+5. Click the link that appears, sign in to your Google account, and grant access
+6. In the next cell, type:
+
+   .. code-block:: python
+
+      %cd /content/drive/MyDrive
+      !git clone https://github.com/juergenmeinecke/EMET2007.git
+
+7. Press **Shift + Enter** to run the cell
+
+**Step 2: Access Your Files**
+
+1. Go to `drive.google.com <https://drive.google.com>`_
+2. You should see a folder called **EMET2007**
+3. Open the folder and double-click any ``.ipynb`` file
+4. Choose **Open with** -> **Google Colaboratory**
+
+If you don't see Google Colaboratory as an option, click **Connect more apps**, search for "Colaboratory", and install it.
+
+**Updating the Repository Later**
+
+Open any Colab notebook and run:
+
+.. code-block:: python
+
+   from google.colab import drive
+   drive.mount('/content/drive')
+   %cd /content/drive/MyDrive/EMET2007
+   !git pull
+
+If you get an error about local changes:
+
+.. code-block:: python
+
+   %cd /content/drive/MyDrive/EMET2007
+   !git checkout .
+   !git pull
 
 
-
-Here I'm guiding you through the necessary steps to set up Colab. You need
-
-* a reliable internet connection;
-
-* a Google account (Gmail).
-
-It looks complicated with a lot of steps, but I promise you that it is actually quite easy. I'm just
-providing every little tiny step below, which makes it seem long. At the end of all of this, you
-will have run your first Python code inside your web browser using the Jupyter notebook interface.
-Yippee!
-
-Step 1
-----------
-Click on the `9 dots` icon in the top right corner and select `Drive`.
-
-.. image:: ./screenshots/colab_2.png
-
-
-Step 2
-----------
-
-In `Drive` click `New` in the top left corner.
-
-.. image:: ./screenshots/colab_3.png
-
-
-Step 3
+Anaconda
 --------
 
-Select `Connect more apps`.
+Anaconda is the world's most popular open-source Python distribution platform. You can download a free version from `anaconda.com/download <https://www.anaconda.com/download/>`_.
 
-.. image:: ./screenshots/colab_4.png
+This will install a rich Python environment on your computer including:
 
+- The Python programming language (with all the libraries you will need)
+- The Jupyter notebooks environment
+- Many other tools to take your Python programming further
 
-Step 4
---------
+The installation process is straightforward -- just download the installer for your operating system and follow the prompts.
 
-In the window that opens, type `colab` in the search bar and select `Colaboratory`.
+**Launching Jupyter**
 
-.. image:: ./screenshots/colab_5.png
+After installation, you can launch Jupyter in several ways:
 
+- **Anaconda Navigator**: Open Anaconda Navigator and click **Launch** under Jupyter Notebook (recommended for beginners)
+- **Windows**: Type "Jupyter" in your search bar
+- **Mac**: Search for "Jupyter" using Spotlight (Cmd + Space)
+- **Command line**: Open a terminal or Anaconda Prompt and type ``jupyter notebook``
 
-Step 5
---------
+.. warning::
 
-Click on the `Colaboratory` symbol to start installing it. Follow these easy steps:
+   Do not launch ``.ipynb`` files by double-clicking them in your File Explorer or Finder! This will not work correctly. Always open Jupyter first, then navigate to your files.
 
-.. image:: ./screenshots/colab_6.png
+**Windows Users**
 
-.. image:: ./screenshots/colab_7.png
+*Install Git:*
 
-.. image:: ./screenshots/colab_8.png
+1. Open **Anaconda Prompt** (search for it in the Start menu)
+2. Type the following command and press Enter:
 
-.. image:: ./screenshots/colab_9.png
+   .. code-block:: bash
 
-.. image:: ./screenshots/colab_10.png
+      conda install git
 
+3. When prompted, type ``y`` and press Enter to confirm
+4. Wait for the installation to complete
 
-Step 6
---------
+*Clone the Repository:*
 
-Create a new folder in `Drive`. Call that new folder ``EMET2007``. Give it precisely that name. Do
-not write ``EMET 2007`` or ``Emet2007`` or ``Emet 2007`` or anything else that does not look like
-``EMET2007``!
+1. Open **Anaconda Navigator** (search for it in the Start menu)
+2. Click **Launch** under Jupyter Notebook
+3. In Jupyter, click **New** -> **Python 3** (top right) to create a new notebook
+4. In the first cell, type:
 
-.. image:: ./screenshots/colab_11.png
+   .. code-block:: python
 
-.. image:: ./screenshots/colab_12.png
+      !git clone https://github.com/juergenmeinecke/EMET2007.git
 
+5. Press **Shift + Enter** to run the cell
+6. Wait for the download to complete
 
+*Access Your Files:*
 
-Step 7
---------
+1. Click the **Jupyter** logo in the top left to return to the file browser
+2. You should see a new folder called **EMET2007**
+3. Open the folder and click on any ``.ipynb`` file to start working
 
-Go into your ``EMET2007`` folder by double clicking on it. Create two new folders inside your
-``EMET2007`` folder. Call these new folders ``notebooks`` and ``datasets``. Give them precisely these
-names!
+**Mac Users**
 
-.. image:: ./screenshots/colab_13.png
+*Clone the Repository:*
 
-.. image:: ./screenshots/colab_14.png
+Git is usually pre-installed on Mac, so you can skip straight to cloning.
 
-.. image:: ./screenshots/colab_15.png
+1. Open **Anaconda Navigator** (search for it using Cmd + Space)
+2. Click **Launch** under Jupyter Notebook
+3. In Jupyter, click **New** -> **Python 3** (top right) to create a new notebook
+4. In the first cell, type:
 
-Put a data set inside the ``datasets`` folder. Find the *World Development Indicators* dataset
-``world_bank_wdi.csv`` on my course website (under :ref:`datasets`) , save it to your local
-computer. Then in Google Drive go into your ``datasets`` folder and do a file upload, like so:
+   .. code-block:: python
 
-.. image:: ./screenshots/colab_15b.png
+      !git clone https://github.com/juergenmeinecke/EMET2007.git
 
-.. image:: ./screenshots/colab_15c.png
+5. Press **Shift + Enter** to run the cell
+6. If prompted to install command line developer tools, click **Install** and wait for it to finish, then run the cell again
 
+*Access Your Files:*
 
-Step 8
---------
+1. Click the **Jupyter** logo in the top left to return to the file browser
+2. You should see a new folder called **EMET2007**
+3. Open the folder and click on any ``.ipynb`` file to start working
 
-Navigate into your ``notebooks`` folder. Once there, create your first `Jupyter notebook` by
-clicking on `New` and selecting `Google Colaboratory`.
 
-.. image:: ./screenshots/colab_16.png
+Updating the Repository (Anaconda)
+----------------------------------
 
-A new window will open and it contains your first `Jupyter notebook`. Woohoo!
+If the repository gets updated and you want the latest version:
 
-.. image:: ./screenshots/colab_17.png
+1. Open any notebook
+2. Run this command:
 
+   .. code-block:: python
 
-Step 9
---------
+      %cd EMET2007
+      !git pull
 
-Change its name from the default ``Untitled0.ipynb`` to ``helloworld.ipynb``.
+If you get an error about local changes:
 
-.. image:: ./screenshots/colab_18.png
+.. code-block:: python
 
-.. image:: ./screenshots/colab_19.png
+   %cd EMET2007
+   !git checkout .
+   !git pull
 
-Step 10
---------
 
-Write your first line of code:
+Troubleshooting
+---------------
 
-.. image:: ./screenshots/colab_20.png
+**"git is not recognized" (Windows)**
 
+You need to install Git first. Open Anaconda Prompt and run:
 
-Step 11
---------
+.. code-block:: bash
 
-Execute your line of code. You can do this in two ways:
+   conda install git
 
-* click on the `play` symbol, or
+**"xcrun: error: invalid active developer path" (Mac)**
 
-* press ``Ctrl`` + ``Enter`` on your keyboard
+You need to install command line tools. Open Terminal and run:
 
-Once you do this, Colab will build a connection for you (which takes a few seconds) and run the line
-of code. At this step, a lot of stuff is going on in the background. Google creates a little yet
-powerful remote computer that can run a rich Python environment for you. 
+.. code-block:: bash
 
-.. image:: ./screenshots/colab_20.png
+   xcode-select --install
 
-There you have it:
+**"fatal: destination path already exists"**
 
-.. image:: ./screenshots/colab_21.png
+You already have a folder with that name. Either delete it first or pull updates instead of cloning again.
 
-Welcome to the world of Python coders!
+**Google Colaboratory not showing in Drive**
 
-
-Step 12
---------
-
-Let's do some more coding while we're at it. We want to be able to use our Excel-created data sets
-to do econometric work. To do that, we need to allow the Jupyter notebook to interact with `Drive`.
-We need to mount the Google drive to the Jupyter session. 
-
-To do so, we need to add new code cell. Look at the previous screenshot, can you spot how code
-cells are added? Two ways:
-
-* navigating with the mouse pointer to the bottom of an existing code cell will give you two pop-up
-  buttons for the creation of code or text cells.
-
-* | via the keyboard shortcut: ``Ctrl+M B``
-  | (that's the control key together with the M key, then the B key)
-
-Create the new code cell and fill it like so:
-
-.. image:: ./screenshots/colab_22.png
-
-When you execute these lines of code, you will need to click yourself through these motions:
-
-.. image:: ./screenshots/colab_23.png
-
-.. image:: ./screenshots/colab_24.png
-
-.. image:: ./screenshots/colab_25new.png
-
-.. image:: ./screenshots/colab_26.png
-
-
-Step 13
---------
-
-Let's think about how our files are organised on Google Drive. You can actually look at this in the
-Jupyter notebook by clicking on the file explorer icon:
-
-.. image:: ./screenshots/colab_27.png
-
-And then I navigated my way through the file tree:
-
-.. image:: ./screenshots/colab_28.png
-
-This shows you the locations (or paths) of two important files that you will need to keep track of:
-your Jupyter notebook ``helloworld.ipynb`` (which you are currently editing) and your data set
-``world_bank_wdi.csv``. You can read off their precise file paths as:
-
-* ``/content/drive/MyDrive/EMET2007/notebooks/helloworld.ipynb``, and
-* ``/content/drive/MyDrive/EMET2007/datasets/world_bank_wdi.csv``
-
-
-Step 14
---------
-
-Type the following lines of code to import the World Bank data set into Jupyter::
-
-    import pandas as pd
-    df = pd.read_csv('/content/drive/MyDrive/EMET2007/datasets/world_bank_wdi.csv')
-    df.head()
-
-Like so:
-
-.. image:: ./screenshots/colab_29.png
-
-Here we are using the so called `Pandas` package of Python to import a `csv`-file.  We are using the
-`Pandas` command ``read_csv``.  It is crucial that we tell the ``read_csv`` command where precisely
-it can find the file in our Google Drive, which is why we input the precise location inside the
-round parentheses.
-
-Furthermore, the ``read_csv`` command converts the `csv`-file into a so-called `Pandas` data frame.
-We give it the name ``df``.
-
-In the last line, when we type ``df.head()``, we are using the `Pandas` ``head`` command to show us
-the top part (the `head`) of the data frame ``df``.
-
-We see that the data contains information about countries, their income groups, GDP, population,
-etc. 
-
-
-Step 15
---------
-
-Never forget to save your work!
-
-.. image:: ./screenshots/colab_30.png
-
-
-
-
-
-
+Go to Google Drive -> click **New** -> **More** -> **Connect more apps** -> search for "Colaboratory" -> **Install**
