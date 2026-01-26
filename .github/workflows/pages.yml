@@ -34,7 +34,7 @@ jobs:
       - name: Sync lecture slides, notebooks, datasets, assignments into docs (so Sphinx can render them)
         run: |
           rsync -av --delete lecture_notes/ docs/lecture_notes/
-          rsync -av --delete notebooks/ docs/notebooks/
+          rsync -av --delete computer_labs/ docs/computer_labs/
           rsync -av --delete datasets/ docs/datasets/
           rsync -av --delete assignments/ docs/assignments/
 
