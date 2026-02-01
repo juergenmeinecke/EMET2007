@@ -1,8 +1,8 @@
 Welcome to EMET2007/4007/6007 -- Econometric Methods!
 =====================================================
 
-This website is hosted on Github and all related content can be found in my repo
-https://github.com/juergenmeinecke/EMET2007
+| This website is hosted on Github and all related content can be found in my repo
+| https://github.com/juergenmeinecke/EMET2007
 
 
 .. admonition:: Welcome
