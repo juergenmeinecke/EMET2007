@@ -25,10 +25,11 @@ https://github.com/juergenmeinecke/EMET2007
     class_summary
     lectures
     workshops
-    jupyter
+    assignments
+    chatbot
     consultation
     quizzes
-    assignments
+    jupyter
     exam
     faq
     emet8014
