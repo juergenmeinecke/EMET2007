@@ -26,6 +26,9 @@ Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespa
 All required Python packages are pre-installed -- just open a notebook and start working.
 
 > **Note:** The first time you create a codespace it takes about 5 minutes to set up the
-> environment. Subsequent launches are much faster. GitHub provides limited free compute hours, but
-> signing up for the [GitHub Student Developer Pack](https://education.github.com/pack) should give
-> you more than enough for this course.
+> environment. Subsequent launches are much faster.
+
+> **Cost:** GitHub Codespaces comes with a limited number of free compute hours each month. Beyond
+> that, you may be charged. We recommend signing up for the [GitHub Student Developer
+> Pack](https://education.github.com/pack), which provides a free allowance that should comfortably
+> cover everything you need for this course.
