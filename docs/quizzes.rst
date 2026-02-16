@@ -17,21 +17,21 @@ Timing
 Logistics
 ---------
 
-The quizzes are offered through the Canvas Class Site. The format of the quizzes is mostly multiple
-choice and true/false type questions.
+*   The quizzes are offered through the Canvas Class Site. 
 
-Each quiz will be available from 9:00am on the Wednesday of the corresponding week until **3:00pm**
-on the Thursday of the corresponding week. During this **30** hour time window you can attempt the
-quiz once, and you have 60 minutes to complete it.
+*   Each quiz consists of 15 multiple choice or true/false questions.
 
-.. important::
+*   Each quiz will be available from 9:00am on the Wednesday of the corresponding week until **3:00pm**
+    on the Thursday of the corresponding week. 
 
-    The Canvas quiz facility will shut down at 3:00pm sharp on the Thursday of the corresponding
-    week, irrespective of the 60 minute time window for completion. This means, for example, that if
-    you start the quiz at 2.30pm on Thursday, you will only have 30 minutes to complete it.
+*   During this **30** hour time window you can attempt the quiz once
 
-    Therefore it makes sense to attempt the quiz no later than 2:00pm on the Thursday of the
-    corresponding week.
+*   Once you start the quiz, there's no time limit for your attempt (other than that the quiz will shut
+    down at 3.00pm sharp on the Thursday).
+
+    * If you start 9.00am on Wednesday, then you have 30 hours to complete the quiz.
+
+    * If you start 2.30pm on Thursday, then you have 30 minutes to complete the quiz.
 
 More information will be offered during weeks 1 and 2 of the semester (with timely reminders
 throughout the semester).

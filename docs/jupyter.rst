@@ -99,7 +99,7 @@ Clone the EMET2007 Repo to Google Drive
 2. Click **New notebook**
 3. In the first cell, type:
 
-   .. code-block:: python
+   .. code-block:: bash
 
       from google.colab import drive
       drive.mount('/content/drive')
@@ -108,7 +108,7 @@ Clone the EMET2007 Repo to Google Drive
 5. Click the link that appears, sign in to your Google account, and grant access
 6. In the next cell, type:
 
-   .. code-block:: python
+   .. code-block:: bash
 
       %cd /content/drive/MyDrive
       !git clone https://github.com/juergenmeinecke/EMET2007.git
@@ -135,7 +135,7 @@ Updating the Repo Later
 
 Open any Colab notebook and run:
 
-.. code-block:: python
+.. code-block:: bash
 
    from google.colab import drive
    drive.mount('/content/drive')
@@ -144,7 +144,7 @@ Open any Colab notebook and run:
 
 If you get an error about local changes:
 
-.. code-block:: python
+.. code-block:: bash
 
    %cd /content/drive/MyDrive/EMET2007
    !git checkout .
@@ -213,7 +213,7 @@ Clone the EMET2007 Repo
 3. In Jupyter, click **New** -> **Python 3** (top right) to create a new notebook
 4. In the first cell, type:
 
-   .. code-block:: python
+   .. code-block:: bash
 
       !git clone https://github.com/juergenmeinecke/EMET2007.git
 
@@ -237,7 +237,7 @@ Unlike on Windows, Git is usually pre-installed on Mac, so you can skip straight
 3. In Jupyter, click **New** -> **Python 3** (top right) to create a new notebook
 4. In the first cell, type:
 
-   .. code-block:: python
+   .. code-block:: bash
 
       !git clone https://github.com/juergenmeinecke/EMET2007.git
 
@@ -259,14 +259,14 @@ If the repository gets updated and you want the latest version:
 1. Open any notebook
 2. Run this command:
 
-   .. code-block:: python
+   .. code-block:: bash
 
       %cd EMET2007
       !git pull
 
 If you get an error about local changes:
 
-.. code-block:: python
+.. code-block:: bash
 
    %cd EMET2007
    !git checkout .

@@ -13,7 +13,9 @@ Welcome to EMET2007/4007/6007 -- Econometric Methods!
 
     * Juergen Meinecke (course convenor)
 
-    * TBA 
+    * Xiaohan Xu (tutor)
+
+    * Mi Lim Kim (tutor)
 
     We look forward to working with you!
 
@@ -26,7 +28,6 @@ Welcome to EMET2007/4007/6007 -- Econometric Methods!
     lectures
     workshops
     assignments
-    chatbot
     consultation
     quizzes
     jupyter
