@@ -1,6 +1,9 @@
 Contact/Consultation
 ======================
 
+Feel free to chat to me on Mondays either in the break between 10.55-11.05 or after the lecture.
+Otherwise you can visit me Mondays between 3.30-4.30 @ Arndt 1022.
+
 .. admonition:: Email
 
     If you would like to contact us by email, please send a message to the following functional email

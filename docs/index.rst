@@ -15,7 +15,7 @@ Welcome to EMET2007/4007/6007 -- Econometric Methods!
 
     * Xiaohan Xu (tutor)
 
-    * Mi Lim Kim (tutor)
+    * MiLim Kim (tutor)
 
     We look forward to working with you!
 
@@ -27,9 +27,10 @@ Welcome to EMET2007/4007/6007 -- Econometric Methods!
     class_summary
     lectures
     workshops
+    labs
     assignments
-    consultation
     quizzes
+    consultation
     jupyter
     exam
     faq
