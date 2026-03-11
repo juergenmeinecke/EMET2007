@@ -18,9 +18,9 @@ Deadlines for submission
 
 At the **very latest** you may submit your solution to
 
-* assignment 1 by 5:00pm (AEDT, local time in Canberra) on Wednesday 25 March (week 6);
+* assignment 1 by 5:00pm (AEDT, local time in Canberra) on Wednesday 1 April (week 6);
 
-* assignment 2 by 5:00pm (AEST, local time in Canberra) on Wednesday 13 May (week 11).
+* assignment 2 by 5:00pm (AEST, local time in Canberra) on Wednesday 20 May (week 11).
 
 You should aim to submit several days **before** these strict deadlines.
 
