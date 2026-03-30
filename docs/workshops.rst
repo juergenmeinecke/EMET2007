@@ -236,7 +236,8 @@ b) Obtain all partial derivatives.
 
 c) Write down all first order conditions.
 
-d) Derive an expression for :math:`\widehat{\beta}_1` as a function of the data.
+d) Derive an expression for :math:`\widehat{\beta}_1` as a function of :math:`\widehat{\beta}_2`.
+   Similarly for  :math:`\widehat{\beta}_2`. 
 
 e) Suppose (only here) that :math:`\sum_{i=1}^n X_{1i} X_{2i} = 0`.
    Show that :math:`\widehat{\beta}_1 = \sum_{i=1}^n X_{1i} Y_i / \sum_{i=1}^n X_{1i}^2`.
