@@ -215,11 +215,6 @@ change at all, while the intercept shifts by :math:`a - b \widehat{\beta}_1`.
 Week 7
 ------
 
-We'll first do a very quick run-through Assignment 1.
-
-If you want more specific feedback, please talk to your tutor after the computer labs,
-or visit them during their regular consultation hours.
-
 **Exercise**
 
 Consider the regression model
@@ -261,6 +256,13 @@ g) Still suppose that the model does include an intercept.
 
 Week 8
 ------
+
+We'll first do a very quick run-through :download:`Assignment 1 <../assignments/assignment_1.html>`.
+
+If you want more specific feedback, please talk to your tutor after the computer labs,
+or visit them during their regular consultation hours.
+
+**Exercise**
 
 A recent study found that the death rate for people who typically sleep fewer than 7 hours per night
 is 5 percentage points higher than for people who typically sleep more than 7 hours a night. The 1.1
