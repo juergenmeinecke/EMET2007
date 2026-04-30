@@ -264,11 +264,11 @@ or visit them during their regular consultation hours.
 
 **Exercise**
 
-A recent study found that the death rate for people who typically sleep fewer than 7 hours per night
-is 5 percentage points higher than for people who typically sleep more than 7 hours a night. The 1.1
-million observations used for this study came from a random survey of Australians aged 30 to 102.
-Each survey respondent was tracked for 4 years, sleeping patterns and mortality outcomes were
-observed over that 4 year period.
+A recent study found that the mortality rate for people who typically sleep fewer than 7 hours per
+night is 5 percentage points higher than for people who typically sleep more than 7 hours a night.
+The 1.1 million observations used for this study came from a random survey of Australians aged 30 to
+102.  Each survey respondent was tracked for 4 years, sleeping patterns and mortality outcomes were
+      observed over that 4 year period.
 
 Based on this brief summary of the survey, would you recommend that Australians who sleep fewer
 than 7 hours per night should try to sleep longer as a way to prolonging their lives? Explain.
