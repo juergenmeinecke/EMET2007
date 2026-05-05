@@ -6,6 +6,11 @@ time series for Australian CPI for week 10 and 11 lab:
 
 The data are provided by the Reserve Bank of Australia (on their website then navigate to "Inflation and Inflation Expectations")
 
+Download their "Consumer Price Inflation - G1" spreadsheet
+
+In it, the B column "Consumer Price Index" is the correct one.
+(Notice: sometimes they change the index month which changes all entries but that isn't a problem as the entire data set is updated.)
+
 
 
 
