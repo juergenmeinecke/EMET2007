@@ -401,7 +401,7 @@ b. Derive the AR(2) coefficients for :math:`Y_t` as function of :math:`\beta_0` 
 Week 12
 -------
 
-We'll first do a very quick run-through Assignment 2.
+We'll first do a very quick run-through :download:`Assignment 2 <../assignments/assignment_2.html>`.
 
 After that, I will work through the practice exam.
 

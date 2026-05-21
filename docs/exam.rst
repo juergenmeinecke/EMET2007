@@ -8,4 +8,4 @@ I will work through some of the questions during the week 12 workshop session.
 
 *   :download:`practice exam <../practice_final/pfinal.pdf>`
 
-..    *   :download:`answer key <../exams/practice/pfinal_ak_handwritten.pdf>`
+*   :download:`answer key <../practice_final/pfinal_ak.pdf>`
